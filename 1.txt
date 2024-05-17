@@ -1,0 +1,735 @@
+----
+type=DAEMON_START msg=audit(2024年04月05日 20:41:34.330:3221) : auditd start, ver=2.4.5 format=raw kernel=4.15.0-142-generic auid=unset pid=4142 subj=unconfined  res=success 
+----
+type=SERVICE_START msg=audit(2024年04月05日 20:41:34.427:1439) : pid=1 uid=root auid=unset ses=unset msg='unit=auditd comm=systemd exe=/lib/systemd/systemd hostname=? addr=? terminal=? res=success' 
+----
+type=USER_END msg=audit(2024年04月05日 20:41:34.431:1440) : pid=4136 uid=root auid=unset ses=unset msg='op=PAM:session_close acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/6 res=success' 
+----
+type=CRED_DISP msg=audit(2024年04月05日 20:41:34.431:1441) : pid=4136 uid=root auid=unset ses=unset msg='op=PAM:setcred acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/6 res=success' 
+----
+type=CONFIG_CHANGE msg=audit(2024年04月05日 20:41:34.331:1425) : audit_pid=4142 old=0 auid=unset ses=unset res=yes 
+----
+type=CONFIG_CHANGE msg=audit(2024年04月05日 20:41:34.331:1426) : audit_backlog_limit=320 old=320 auid=unset ses=unset res=yes 
+----
+type=CONFIG_CHANGE msg=audit(2024年04月05日 20:41:34.347:1427) : auid=unset ses=unset op=add_rule key=(null) list=exit res=yes 
+----
+type=CONFIG_CHANGE msg=audit(2024年04月05日 20:41:34.347:1428) : auid=unset ses=unset op=add_rule key=(null) list=exit res=yes 
+----
+type=CONFIG_CHANGE msg=audit(2024年04月05日 20:41:34.347:1429) : auid=unset ses=unset op=add_rule key=(null) list=user res=yes 
+----
+type=CONFIG_CHANGE msg=audit(2024年04月05日 20:41:34.347:1430) : auid=unset ses=unset op=add_rule key=(null) list=exit res=yes 
+----
+type=CONFIG_CHANGE msg=audit(2024年04月05日 20:41:34.347:1431) : auid=unset ses=unset op=add_rule key=(null) list=user res=yes 
+----
+type=CONFIG_CHANGE msg=audit(2024年04月05日 20:41:34.347:1432) : auid=unset ses=unset op=add_rule key=(null) list=exit res=yes 
+----
+type=CONFIG_CHANGE msg=audit(2024年04月05日 20:41:34.375:1433) : auid=unset ses=unset op=add_rule key=(null) list=exit res=yes 
+----
+type=CONFIG_CHANGE msg=audit(2024年04月05日 20:41:34.387:1434) : auid=unset ses=unset op=add_rule key=(null) list=exit res=yes 
+----
+type=CONFIG_CHANGE msg=audit(2024年04月05日 20:41:34.399:1435) : auid=unset ses=unset op=add_rule key=(null) list=exit res=yes 
+----
+type=CONFIG_CHANGE msg=audit(2024年04月05日 20:41:34.427:1436) : auid=unset ses=unset op=add_rule key=USE list=exit res=yes 
+----
+type=CONFIG_CHANGE msg=audit(2024年04月05日 20:41:34.427:1437) : auid=unset ses=unset op=add_rule key=USER list=exit res=yes 
+----
+type=CONFIG_CHANGE msg=audit(2024年04月05日 20:41:34.427:1438) : auid=unset ses=unset op=add_rule key=USER list=exit res=yes 
+----
+type=USER_CMD msg=audit(2024年04月05日 20:41:40.327:1443) : pid=4158 uid=a auid=unset ses=unset msg='cwd=/etc/audit cmd=gedit audit.rules terminal=pts/6 res=success' 
+----
+type=CRED_REFR msg=audit(2024年04月05日 20:41:40.327:1444) : pid=4158 uid=root auid=unset ses=unset msg='op=PAM:setcred acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/6 res=success' 
+----
+type=USER_START msg=audit(2024年04月05日 20:41:40.327:1445) : pid=4158 uid=root auid=unset ses=unset msg='op=PAM:session_open acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/6 res=success' 
+----
+type=USER_END msg=audit(2024年04月05日 20:41:41.827:1451) : pid=4158 uid=root auid=unset ses=unset msg='op=PAM:session_close acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/6 res=success' 
+----
+type=CRED_DISP msg=audit(2024年04月05日 20:41:41.827:1452) : pid=4158 uid=root auid=unset ses=unset msg='op=PAM:setcred acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/6 res=success' 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:41:40.327:1446) : proctitle=gedit audit.rules 
+type=PATH msg=audit(2024年04月05日 20:41:40.327:1446) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:41:40.327:1446) : item=0 name=/usr/bin/gedit inode=265655 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:41:40.327:1446) : cwd=/etc/audit 
+type=EXECVE msg=audit(2024年04月05日 20:41:40.327:1446) : argc=2 a0=gedit a1=audit.rules 
+type=SYSCALL msg=audit(2024年04月05日 20:41:40.327:1446) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x558f7ec67b98 a1=0x558f7ec6dd98 a2=0x558f7ec6de60 a3=0x558f7ec7e000 items=2 ppid=4158 pid=4159 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts6 ses=unset comm=gedit exe=/usr/bin/gedit key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:41:40.359:1447) : proctitle=gedit audit.rules 
+type=PATH msg=audit(2024年04月05日 20:41:40.359:1447) : item=0 name=/usr/local/sbin/dbus-launch nametype=UNKNOWN cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:41:40.359:1447) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:41:40.359:1447) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x1f080b7 a1=0x1f09b30 a2=0x7ffea3a2e4a0 a3=0x97 items=1 ppid=4159 pid=4162 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts6 ses=unset comm=gedit exe=/usr/bin/gedit key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:41:40.359:1448) : proctitle=gedit audit.rules 
+type=PATH msg=audit(2024年04月05日 20:41:40.359:1448) : item=0 name=/usr/local/bin/dbus-launch nametype=UNKNOWN cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:41:40.359:1448) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:41:40.359:1448) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x1f080b8 a1=0x1f09b30 a2=0x7ffea3a2e4a0 a3=0x97 items=1 ppid=4159 pid=4162 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts6 ses=unset comm=gedit exe=/usr/bin/gedit key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:41:40.359:1449) : proctitle=gedit audit.rules 
+type=PATH msg=audit(2024年04月05日 20:41:40.359:1449) : item=0 name=/usr/sbin/dbus-launch nametype=UNKNOWN cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:41:40.359:1449) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:41:40.359:1449) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x1f080bd a1=0x1f09b30 a2=0x7ffea3a2e4a0 a3=0x97 items=1 ppid=4159 pid=4162 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts6 ses=unset comm=gedit exe=/usr/bin/gedit key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:41:40.359:1450) : proctitle=gedit audit.rules 
+type=PATH msg=audit(2024年04月05日 20:41:40.359:1450) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:41:40.359:1450) : item=0 name=/usr/bin/dbus-launch inode=265435 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:41:40.359:1450) : cwd=/etc/audit 
+type=EXECVE msg=audit(2024年04月05日 20:41:40.359:1450) : argc=4 a0=dbus-launch a1=--autolaunch=07728c057cea4b1dae3de8f70a0bdf84 a2=--binary-syntax a3=--close-stderr 
+type=SYSCALL msg=audit(2024年04月05日 20:41:40.359:1450) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x1f080be a1=0x1f09b30 a2=0x7ffea3a2e4a0 a3=0x97 items=2 ppid=4159 pid=4162 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts6 ses=unset comm=dbus-launch exe=/usr/bin/dbus-launch key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:41:40.315:1442) : proctitle=sudo gedit audit.rules 
+type=PATH msg=audit(2024年04月05日 20:41:40.315:1442) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:41:40.315:1442) : item=0 name=/usr/bin/sudo inode=264893 dev=08:01 mode=file,suid,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:41:40.315:1442) : cwd=/etc/audit 
+type=EXECVE msg=audit(2024年04月05日 20:41:40.315:1442) : argc=3 a0=sudo a1=gedit a2=audit.rules 
+type=SYSCALL msg=audit(2024年04月05日 20:41:40.315:1442) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x1686a28 a1=0x1686c48 a2=0x1743008 a3=0x598 items=2 ppid=2441 pid=4158 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+----
+type=USER_CMD msg=audit(2024年04月05日 20:42:35.443:1454) : pid=4167 uid=a auid=unset ses=unset msg='cwd=/var/log/audit cmd=ausearch -i terminal=pts/2 res=success' 
+----
+type=CRED_REFR msg=audit(2024年04月05日 20:42:35.443:1455) : pid=4167 uid=root auid=unset ses=unset msg='op=PAM:setcred acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=USER_START msg=audit(2024年04月05日 20:42:35.443:1456) : pid=4167 uid=root auid=unset ses=unset msg='op=PAM:session_open acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=USER_END msg=audit(2024年04月05日 20:42:35.447:1458) : pid=4167 uid=root auid=unset ses=unset msg='op=PAM:session_close acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=CRED_DISP msg=audit(2024年04月05日 20:42:35.447:1459) : pid=4167 uid=root auid=unset ses=unset msg='op=PAM:setcred acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:42:35.443:1457) : proctitle=ausearch -i 
+type=PATH msg=audit(2024年04月05日 20:42:35.443:1457) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:42:35.443:1457) : item=0 name=/sbin/ausearch inode=138882 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:42:35.443:1457) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 20:42:35.443:1457) : argc=2 a0=ausearch a1=-i 
+type=SYSCALL msg=audit(2024年04月05日 20:42:35.443:1457) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x563d36c97b98 a1=0x563d36c9dd98 a2=0x563d36c9de60 a3=0x563d36cae000 items=2 ppid=4167 pid=4168 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=unset comm=ausearch exe=/sbin/ausearch key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:42:35.439:1453) : proctitle=sudo ausearch -i 
+type=PATH msg=audit(2024年04月05日 20:42:35.439:1453) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:42:35.439:1453) : item=0 name=/usr/bin/sudo inode=264893 dev=08:01 mode=file,suid,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:42:35.439:1453) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 20:42:35.439:1453) : argc=3 a0=sudo a1=ausearch a2=-i 
+type=SYSCALL msg=audit(2024年04月05日 20:42:35.439:1453) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xa9e568 a1=0xa8b9c8 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4167 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+----
+type=USER_CMD msg=audit(2024年04月05日 20:47:06.087:1462) : pid=4180 uid=a auid=unset ses=unset msg='cwd=/var/log/audit cmd=ausearch -i terminal=pts/2 res=success' 
+----
+type=CRED_REFR msg=audit(2024年04月05日 20:47:06.087:1463) : pid=4180 uid=root auid=unset ses=unset msg='op=PAM:setcred acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=USER_START msg=audit(2024年04月05日 20:47:06.087:1464) : pid=4180 uid=root auid=unset ses=unset msg='op=PAM:session_open acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=USER_END msg=audit(2024年04月05日 20:47:06.095:1466) : pid=4180 uid=root auid=unset ses=unset msg='op=PAM:session_close acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=CRED_DISP msg=audit(2024年04月05日 20:47:06.095:1467) : pid=4180 uid=root auid=unset ses=unset msg='op=PAM:setcred acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:47:06.075:1461) : proctitle=grep --color=auto USER_CMD 
+type=PATH msg=audit(2024年04月05日 20:47:06.075:1461) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:47:06.075:1461) : item=0 name=/bin/grep inode=130109 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:47:06.075:1461) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 20:47:06.075:1461) : argc=3 a0=grep a1=--color=auto a2=USER_CMD 
+type=SYSCALL msg=audit(2024年04月05日 20:47:06.075:1461) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xbddc68 a1=0xc08348 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4181 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=grep exe=/bin/grep key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:47:06.075:1460) : proctitle=sudo ausearch -i 
+type=PATH msg=audit(2024年04月05日 20:47:06.075:1460) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:47:06.075:1460) : item=0 name=/usr/bin/sudo inode=264893 dev=08:01 mode=file,suid,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:47:06.075:1460) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 20:47:06.075:1460) : argc=3 a0=sudo a1=ausearch a2=-i 
+type=SYSCALL msg=audit(2024年04月05日 20:47:06.075:1460) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xc13408 a1=0xa9de88 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4180 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:47:06.087:1465) : proctitle=ausearch -i 
+type=PATH msg=audit(2024年04月05日 20:47:06.087:1465) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:47:06.087:1465) : item=0 name=/sbin/ausearch inode=138882 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:47:06.087:1465) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 20:47:06.087:1465) : argc=2 a0=ausearch a1=-i 
+type=SYSCALL msg=audit(2024年04月05日 20:47:06.087:1465) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55e65c773b98 a1=0x55e65c779d98 a2=0x55e65c779e60 a3=0x55e65c78a000 items=2 ppid=4180 pid=4182 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=unset comm=ausearch exe=/sbin/ausearch key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:47:43.843:1468) : proctitle=ls --color=auto 
+type=PATH msg=audit(2024年04月05日 20:47:43.843:1468) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:47:43.843:1468) : item=0 name=/bin/ls inode=130135 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:47:43.843:1468) : cwd=/etc/audit 
+type=EXECVE msg=audit(2024年04月05日 20:47:43.843:1468) : argc=2 a0=ls a1=--color=auto 
+type=SYSCALL msg=audit(2024年04月05日 20:47:43.843:1468) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x1679ce8 a1=0x1686ac8 a2=0x1743008 a3=0x598 items=2 ppid=2441 pid=4185 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=ls exe=/bin/ls key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:47:59.879:1469) : proctitle=gcc b.c 
+type=PATH msg=audit(2024年04月05日 20:47:59.879:1469) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:47:59.879:1469) : item=0 name=/usr/bin/gcc inode=265633 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:47:59.879:1469) : cwd=/etc/audit 
+type=EXECVE msg=audit(2024年04月05日 20:47:59.879:1469) : argc=2 a0=gcc a1=b.c 
+type=SYSCALL msg=audit(2024年04月05日 20:47:59.879:1469) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x1686a28 a1=0x1686c08 a2=0x1743008 a3=0x598 items=2 ppid=2441 pid=4186 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=gcc exe=/usr/bin/gcc-5 key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:47:59.891:1470) : proctitle=gcc b.c 
+type=PATH msg=audit(2024年04月05日 20:47:59.891:1470) : item=0 name=/home/a/bin/as nametype=UNKNOWN cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:47:59.891:1470) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:47:59.891:1470) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x7ffc17c892a4 a1=0xb34768 a2=0xb33d80 a3=0x7ff32a3f9270 items=1 ppid=4186 pid=4188 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=gcc exe=/usr/bin/gcc-5 key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:47:59.891:1471) : proctitle=gcc b.c 
+type=PATH msg=audit(2024年04月05日 20:47:59.891:1471) : item=0 name=/home/a/.local/bin/as nametype=UNKNOWN cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:47:59.891:1471) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:47:59.891:1471) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x7ffc17c8929d a1=0xb34768 a2=0xb33d80 a3=0x7ff32a3f9270 items=1 ppid=4186 pid=4188 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=gcc exe=/usr/bin/gcc-5 key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:47:59.891:1472) : proctitle=gcc b.c 
+type=PATH msg=audit(2024年04月05日 20:47:59.891:1472) : item=0 name=/usr/local/sbin/as nametype=UNKNOWN cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:47:59.891:1472) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:47:59.891:1472) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x7ffc17c892a0 a1=0xb34768 a2=0xb33d80 a3=0x7ff32a3f9270 items=1 ppid=4186 pid=4188 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=gcc exe=/usr/bin/gcc-5 key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:47:59.891:1473) : proctitle=gcc b.c 
+type=PATH msg=audit(2024年04月05日 20:47:59.891:1473) : item=0 name=/usr/local/bin/as nametype=UNKNOWN cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:47:59.891:1473) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:47:59.891:1473) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x7ffc17c892a1 a1=0xb34768 a2=0xb33d80 a3=0x7ff32a3f9270 items=1 ppid=4186 pid=4188 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=gcc exe=/usr/bin/gcc-5 key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:47:59.891:1474) : proctitle=gcc b.c 
+type=PATH msg=audit(2024年04月05日 20:47:59.891:1474) : item=0 name=/usr/sbin/as nametype=UNKNOWN cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:47:59.891:1474) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:47:59.891:1474) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x7ffc17c892a6 a1=0xb34768 a2=0xb33d80 a3=0x7ff32a3f9270 items=1 ppid=4186 pid=4188 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=gcc exe=/usr/bin/gcc-5 key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:47:59.891:1475) : proctitle=gcc b.c 
+type=PATH msg=audit(2024年04月05日 20:47:59.891:1475) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:47:59.891:1475) : item=0 name=/usr/bin/as inode=266847 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:47:59.891:1475) : cwd=/etc/audit 
+type=EXECVE msg=audit(2024年04月05日 20:47:59.891:1475) : argc=5 a0=as a1=--64 a2=-o a3=/tmp/cceB0CeS.o a4=/tmp/ccMjOJK2.s 
+type=SYSCALL msg=audit(2024年04月05日 20:47:59.891:1475) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x7ffc17c892a7 a1=0xb34768 a2=0xb33d80 a3=0x7ff32a3f9270 items=2 ppid=4186 pid=4188 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=as exe=/usr/bin/x86_64-linux-gnu-as key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:47:59.899:1476) : proctitle=/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -pl 
+type=PATH msg=audit(2024年04月05日 20:47:59.899:1476) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:47:59.899:1476) : item=0 name=/usr/bin/ld inode=266869 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:47:59.899:1476) : cwd=/etc/audit 
+type=EXECVE msg=audit(2024年04月05日 20:47:59.899:1476) : argc=44 a0=/usr/bin/ld a1=-plugin a2=/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so a3=-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper a4=-plugin-opt=-fresolution=/tmp/ccvbT7JH.res a5=-plugin-opt=-pass-through=-lgcc a6=-plugin-opt=-pass-through=-lgcc_s a7=-plugin-opt=-pass-through=-lc a8=-plugin-opt=-pass-through=-lgcc a9=-plugin-opt=-pass-through=-lgcc_s a10=--sysroot=/ a11=--build-id a12=--eh-frame-hdr a13=-m a14=elf_x86_64 a15=--hash-style=gnu a16=--as-needed a17=-dynamic-linker a18=/lib64/ld-linux-x86-64.so.2 a19=-z a20=relro a21=/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o a22=/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o a23=/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o a24=-L/usr/lib/gcc/x86_64-linux-gnu/5 a25=-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu a26=-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib a27=-L/lib/x86_64-linux-gnu a28=-L/lib/../lib a29=-L/usr/lib/x86_64-linux-gnu a30=-L/usr/lib/../lib a31=-L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. a32=/tmp/cceB0CeS.o a33=-lgcc a34=--as-needed a35=-lgcc_s a36=--no-as-needed a37=-lc a38=-lgcc a39=--as-needed a40=-lgcc_s a41=--no-as-needed a42=/usr/lib/gcc/x86_64-linux-gnu/5/crtend.o a43=/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o 
+type=SYSCALL msg=audit(2024年04月05日 20:47:59.899:1476) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xdf06d0 a1=0xdefff0 a2=0x7ffff1f89d20 a3=0x5b3 items=2 ppid=4189 pid=4190 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=ld exe=/usr/bin/x86_64-linux-gnu-ld.bfd key=USER 
+----
+type=USER_CMD msg=audit(2024年04月05日 20:48:06.519:1478) : pid=4191 uid=a auid=unset ses=unset msg='cwd=/etc/audit cmd=gedit a.c terminal=pts/6 res=success' 
+----
+type=CRED_REFR msg=audit(2024年04月05日 20:48:06.519:1479) : pid=4191 uid=root auid=unset ses=unset msg='op=PAM:setcred acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/6 res=success' 
+----
+type=USER_START msg=audit(2024年04月05日 20:48:06.519:1480) : pid=4191 uid=root auid=unset ses=unset msg='op=PAM:session_open acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/6 res=success' 
+----
+type=USER_END msg=audit(2024年04月05日 20:48:08.927:1486) : pid=4191 uid=root auid=unset ses=unset msg='op=PAM:session_close acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/6 res=success' 
+----
+type=CRED_DISP msg=audit(2024年04月05日 20:48:08.927:1487) : pid=4191 uid=root auid=unset ses=unset msg='op=PAM:setcred acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/6 res=success' 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:48:06.519:1481) : proctitle=gedit a.c 
+type=PATH msg=audit(2024年04月05日 20:48:06.519:1481) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:48:06.519:1481) : item=0 name=/usr/bin/gedit inode=265655 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:48:06.519:1481) : cwd=/etc/audit 
+type=EXECVE msg=audit(2024年04月05日 20:48:06.519:1481) : argc=2 a0=gedit a1=a.c 
+type=SYSCALL msg=audit(2024年04月05日 20:48:06.519:1481) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55f2e370bb98 a1=0x55f2e3711d98 a2=0x55f2e3711e60 a3=0x55f2e3722000 items=2 ppid=4191 pid=4192 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts6 ses=unset comm=gedit exe=/usr/bin/gedit key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:48:06.551:1482) : proctitle=gedit a.c 
+type=PATH msg=audit(2024年04月05日 20:48:06.551:1482) : item=0 name=/usr/local/sbin/dbus-launch nametype=UNKNOWN cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:48:06.551:1482) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:48:06.551:1482) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x114a787 a1=0x113a8f0 a2=0x7ffc2b33e810 a3=0x97 items=1 ppid=4192 pid=4195 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts6 ses=unset comm=gedit exe=/usr/bin/gedit key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:48:06.551:1483) : proctitle=gedit a.c 
+type=PATH msg=audit(2024年04月05日 20:48:06.551:1483) : item=0 name=/usr/local/bin/dbus-launch nametype=UNKNOWN cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:48:06.551:1483) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:48:06.551:1483) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x114a788 a1=0x113a8f0 a2=0x7ffc2b33e810 a3=0x97 items=1 ppid=4192 pid=4195 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts6 ses=unset comm=gedit exe=/usr/bin/gedit key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:48:06.551:1484) : proctitle=gedit a.c 
+type=PATH msg=audit(2024年04月05日 20:48:06.551:1484) : item=0 name=/usr/sbin/dbus-launch nametype=UNKNOWN cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:48:06.551:1484) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:48:06.551:1484) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x114a78d a1=0x113a8f0 a2=0x7ffc2b33e810 a3=0x97 items=1 ppid=4192 pid=4195 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts6 ses=unset comm=gedit exe=/usr/bin/gedit key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:48:06.551:1485) : proctitle=gedit a.c 
+type=PATH msg=audit(2024年04月05日 20:48:06.551:1485) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:48:06.551:1485) : item=0 name=/usr/bin/dbus-launch inode=265435 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:48:06.551:1485) : cwd=/etc/audit 
+type=EXECVE msg=audit(2024年04月05日 20:48:06.551:1485) : argc=4 a0=dbus-launch a1=--autolaunch=07728c057cea4b1dae3de8f70a0bdf84 a2=--binary-syntax a3=--close-stderr 
+type=SYSCALL msg=audit(2024年04月05日 20:48:06.551:1485) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x114a78e a1=0x113a8f0 a2=0x7ffc2b33e810 a3=0x97 items=2 ppid=4192 pid=4195 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts6 ses=unset comm=dbus-launch exe=/usr/bin/dbus-launch key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:48:06.507:1477) : proctitle=sudo gedit a.c 
+type=PATH msg=audit(2024年04月05日 20:48:06.507:1477) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:48:06.507:1477) : item=0 name=/usr/bin/sudo inode=264893 dev=08:01 mode=file,suid,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:48:06.507:1477) : cwd=/etc/audit 
+type=EXECVE msg=audit(2024年04月05日 20:48:06.507:1477) : argc=3 a0=sudo a1=gedit a2=a.c 
+type=SYSCALL msg=audit(2024年04月05日 20:48:06.507:1477) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x1686b68 a1=0x16868c8 a2=0x1743008 a3=0x598 items=2 ppid=2441 pid=4191 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+----
+type=USER_CMD msg=audit(2024年04月05日 20:48:13.175:1490) : pid=4201 uid=a auid=unset ses=unset msg='cwd=/var/log/audit cmd=ausearch -i terminal=pts/2 res=success' 
+----
+type=CRED_REFR msg=audit(2024年04月05日 20:48:13.175:1491) : pid=4201 uid=root auid=unset ses=unset msg='op=PAM:setcred acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=USER_START msg=audit(2024年04月05日 20:48:13.175:1492) : pid=4201 uid=root auid=unset ses=unset msg='op=PAM:session_open acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=USER_END msg=audit(2024年04月05日 20:48:13.183:1494) : pid=4201 uid=root auid=unset ses=unset msg='op=PAM:session_close acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=CRED_DISP msg=audit(2024年04月05日 20:48:13.183:1495) : pid=4201 uid=root auid=unset ses=unset msg='op=PAM:setcred acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:48:13.171:1489) : proctitle=grep --color=auto USER_CMD 
+type=PATH msg=audit(2024年04月05日 20:48:13.171:1489) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:48:13.171:1489) : item=0 name=/bin/grep inode=130109 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:48:13.171:1489) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 20:48:13.171:1489) : argc=3 a0=grep a1=--color=auto a2=USER_CMD 
+type=SYSCALL msg=audit(2024年04月05日 20:48:13.171:1489) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xa9e568 a1=0xa9dd48 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4202 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=grep exe=/bin/grep key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:48:13.175:1493) : proctitle=ausearch -i 
+type=PATH msg=audit(2024年04月05日 20:48:13.175:1493) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:48:13.175:1493) : item=0 name=/sbin/ausearch inode=138882 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:48:13.175:1493) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 20:48:13.175:1493) : argc=2 a0=ausearch a1=-i 
+type=SYSCALL msg=audit(2024年04月05日 20:48:13.175:1493) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55b8fc293b98 a1=0x55b8fc299d98 a2=0x55b8fc299e60 a3=0x55b8fc2aa000 items=2 ppid=4201 pid=4203 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=unset comm=ausearch exe=/sbin/ausearch key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:48:13.171:1488) : proctitle=sudo ausearch -i 
+type=PATH msg=audit(2024年04月05日 20:48:13.171:1488) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:48:13.171:1488) : item=0 name=/usr/bin/sudo inode=264893 dev=08:01 mode=file,suid,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:48:13.171:1488) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 20:48:13.171:1488) : argc=3 a0=sudo a1=ausearch a2=-i 
+type=SYSCALL msg=audit(2024年04月05日 20:48:13.171:1488) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xc14828 a1=0xc08348 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4201 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:57:08.843:1497) : proctitle=grep -q compiz /usr/share/gnome-session/sessions/ubuntu.session 
+type=PATH msg=audit(2024年04月05日 20:57:08.843:1497) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:57:08.843:1497) : item=0 name=/bin/grep inode=130109 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:57:08.843:1497) : cwd=/home/a 
+type=EXECVE msg=audit(2024年04月05日 20:57:08.843:1497) : argc=4 a0=grep a1=-q a2=compiz a3=/usr/share/gnome-session/sessions/ubuntu.session 
+type=SYSCALL msg=audit(2024年04月05日 20:57:08.843:1497) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x1135fa8 a1=0x11355c8 a2=0x1134008 a3=0x598 items=2 ppid=4227 pid=4228 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=(none) ses=unset comm=grep exe=/bin/grep key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:57:08.847:1498) : proctitle=systemctl --user is-active unity7 
+type=PATH msg=audit(2024年04月05日 20:57:08.847:1498) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:57:08.847:1498) : item=0 name=/bin/systemctl inode=130210 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:57:08.847:1498) : cwd=/home/a 
+type=EXECVE msg=audit(2024年04月05日 20:57:08.847:1498) : argc=4 a0=systemctl a1=--user a2=is-active a3=unity7 
+type=SYSCALL msg=audit(2024年04月05日 20:57:08.847:1498) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x1137848 a1=0x1137308 a2=0x1134008 a3=0x598 items=2 ppid=4227 pid=4229 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=(none) ses=unset comm=systemctl exe=/bin/systemctl key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:57:08.839:1496) : proctitle=/bin/bash /usr/lib/x86_64-linux-gnu/unity/upstart-prestart-check 
+type=PATH msg=audit(2024年04月05日 20:57:08.839:1496) : item=2 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:57:08.839:1496) : item=1 name=/bin/bash inode=130059 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:57:08.839:1496) : item=0 name=/usr/lib/x86_64-linux-gnu/unity/upstart-prestart-check inode=5910 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:57:08.839:1496) : cwd=/home/a 
+type=EXECVE msg=audit(2024年04月05日 20:57:08.839:1496) : argc=2 a0=/bin/bash a1=/usr/lib/x86_64-linux-gnu/unity/upstart-prestart-check 
+type=SYSCALL msg=audit(2024年04月05日 20:57:08.839:1496) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55c50c4374a0 a1=0x55c50c437450 a2=0x55c50c45cb30 a3=0x8 items=3 ppid=1273 pid=4227 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=(none) ses=unset comm=upstart-prestar exe=/bin/bash key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 20:57:08.855:1499) : proctitle=/usr/lib/x86_64-linux-gnu/unity/unity-panel-service --lockscreen-mode 
+type=PATH msg=audit(2024年04月05日 20:57:08.855:1499) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 20:57:08.855:1499) : item=0 name=/usr/lib/x86_64-linux-gnu/unity/unity-panel-service inode=5907 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 20:57:08.855:1499) : cwd=/home/a 
+type=EXECVE msg=audit(2024年04月05日 20:57:08.855:1499) : argc=2 a0=/usr/lib/x86_64-linux-gnu/unity/unity-panel-service a1=--lockscreen-mode 
+type=SYSCALL msg=audit(2024年04月05日 20:57:08.855:1499) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55c50c417360 a1=0x55c50c48f080 a2=0x55c50c45cb30 a3=0x8 items=2 ppid=1273 pid=4230 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=(none) ses=unset comm=unity-panel-ser exe=/usr/lib/x86_64-linux-gnu/unity/unity-panel-service key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 21:01:12.627:1501) : proctitle=/sbin/unix_chkpwd a chkexpiry 
+type=PATH msg=audit(2024年04月05日 21:01:12.627:1501) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 21:01:12.627:1501) : item=0 name=/sbin/unix_chkpwd inode=137540 dev=08:01 mode=file,sgid,755 ouid=root ogid=shadow rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 21:01:12.627:1501) : cwd=/home/a 
+type=EXECVE msg=audit(2024年04月05日 21:01:12.627:1501) : argc=3 a0=/sbin/unix_chkpwd a1=a a2=chkexpiry 
+type=SYSCALL msg=audit(2024年04月05日 21:01:12.627:1501) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x7f6ca01e3ead a1=0x7f6c85c40a90 a2=0x7f6ca03e7388 a3=0x7f6cb517c270 items=2 ppid=1769 pid=4244 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=shadow sgid=shadow fsgid=shadow tty=(none) ses=unset comm=unix_chkpwd exe=/sbin/unix_chkpwd key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 21:01:12.411:1500) : proctitle=/sbin/unix_chkpwd a nonull 
+type=PATH msg=audit(2024年04月05日 21:01:12.411:1500) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 21:01:12.411:1500) : item=0 name=/sbin/unix_chkpwd inode=137540 dev=08:01 mode=file,sgid,755 ouid=root ogid=shadow rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 21:01:12.411:1500) : cwd=/home/a 
+type=EXECVE msg=audit(2024年04月05日 21:01:12.411:1500) : argc=3 a0=/sbin/unix_chkpwd a1=a a2=nonull 
+type=SYSCALL msg=audit(2024年04月05日 21:01:12.411:1500) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x7f6ca01e3ead a1=0x7f6c85c40b30 a2=0x7f6ca03eb3c0 a3=0x7f6cb517c270 items=2 ppid=1769 pid=4243 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=shadow sgid=shadow fsgid=shadow tty=(none) ses=unset comm=unix_chkpwd exe=/sbin/unix_chkpwd key=USER 
+----
+type=USER_CMD msg=audit(2024年04月05日 21:03:02.067:1503) : pid=4250 uid=a auid=unset ses=unset msg='cwd=/var/log/audit cmd=ausearch -i terminal=pts/2 res=success' 
+----
+type=CRED_REFR msg=audit(2024年04月05日 21:03:02.067:1504) : pid=4250 uid=root auid=unset ses=unset msg='op=PAM:setcred acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=USER_START msg=audit(2024年04月05日 21:03:02.067:1505) : pid=4250 uid=root auid=unset ses=unset msg='op=PAM:session_open acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=USER_END msg=audit(2024年04月05日 21:03:02.083:1507) : pid=4250 uid=root auid=unset ses=unset msg='op=PAM:session_close acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=CRED_DISP msg=audit(2024年04月05日 21:03:02.083:1508) : pid=4250 uid=root auid=unset ses=unset msg='op=PAM:setcred acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=PROCTITLE msg=audit(2024年04月05日 21:03:02.067:1506) : proctitle=ausearch -i 
+type=PATH msg=audit(2024年04月05日 21:03:02.067:1506) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 21:03:02.067:1506) : item=0 name=/sbin/ausearch inode=138882 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 21:03:02.067:1506) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 21:03:02.067:1506) : argc=2 a0=ausearch a1=-i 
+type=SYSCALL msg=audit(2024年04月05日 21:03:02.067:1506) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x556414a44b98 a1=0x556414a4ad98 a2=0x556414a4ae60 a3=0x556414a5b000 items=2 ppid=4250 pid=4251 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=unset comm=ausearch exe=/sbin/ausearch key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 21:03:02.063:1502) : proctitle=sudo ausearch -i 
+type=PATH msg=audit(2024年04月05日 21:03:02.063:1502) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 21:03:02.063:1502) : item=0 name=/usr/bin/sudo inode=264893 dev=08:01 mode=file,suid,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 21:03:02.063:1502) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 21:03:02.063:1502) : argc=3 a0=sudo a1=ausearch a2=-i 
+type=SYSCALL msg=audit(2024年04月05日 21:03:02.063:1502) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xc0e0e8 a1=0xa9dec8 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4250 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+----
+type=USER_CMD msg=audit(2024年04月05日 21:10:45.955:1511) : pid=4270 uid=a auid=unset ses=unset msg='cwd=/var/log/audit cmd=ausearch -i terminal=pts/2 res=success' 
+----
+type=CRED_REFR msg=audit(2024年04月05日 21:10:45.959:1512) : pid=4270 uid=root auid=unset ses=unset msg='op=PAM:setcred acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=USER_START msg=audit(2024年04月05日 21:10:45.959:1513) : pid=4270 uid=root auid=unset ses=unset msg='op=PAM:session_open acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=USER_END msg=audit(2024年04月05日 21:10:45.967:1515) : pid=4270 uid=root auid=unset ses=unset msg='op=PAM:session_close acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=CRED_DISP msg=audit(2024年04月05日 21:10:45.967:1516) : pid=4270 uid=root auid=unset ses=unset msg='op=PAM:setcred acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=PROCTITLE msg=audit(2024年04月05日 21:10:45.951:1510) : proctitle=sudo ausearch -i 
+type=PATH msg=audit(2024年04月05日 21:10:45.951:1510) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 21:10:45.951:1510) : item=0 name=/usr/bin/sudo inode=264893 dev=08:01 mode=file,suid,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 21:10:45.951:1510) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 21:10:45.951:1510) : argc=3 a0=sudo a1=ausearch a2=-i 
+type=SYSCALL msg=audit(2024年04月05日 21:10:45.951:1510) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xa89d68 a1=0xa9de88 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4270 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 21:10:45.959:1514) : proctitle=ausearch -i 
+type=PATH msg=audit(2024年04月05日 21:10:45.959:1514) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 21:10:45.959:1514) : item=0 name=/sbin/ausearch inode=138882 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 21:10:45.959:1514) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 21:10:45.959:1514) : argc=2 a0=ausearch a1=-i 
+type=SYSCALL msg=audit(2024年04月05日 21:10:45.959:1514) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55abf5b60b98 a1=0x55abf5b66d98 a2=0x55abf5b66e60 a3=0x55abf5b77000 items=2 ppid=4270 pid=4272 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=unset comm=ausearch exe=/sbin/ausearch key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 21:10:45.951:1509) : proctitle=grep --color=auto USER_CMD 
+type=PATH msg=audit(2024年04月05日 21:10:45.951:1509) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 21:10:45.951:1509) : item=0 name=/bin/grep inode=130109 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 21:10:45.951:1509) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 21:10:45.951:1509) : argc=3 a0=grep a1=--color=auto a2=USER_CMD 
+type=SYSCALL msg=audit(2024年04月05日 21:10:45.951:1509) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xaa4448 a1=0xc08348 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4271 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=grep exe=/bin/grep key=USER 
+----
+type=USER_CMD msg=audit(2024年04月05日 21:10:49.771:1518) : pid=4273 uid=a auid=unset ses=unset msg='cwd=/var/log/audit cmd=ausearch -i terminal=pts/2 res=success' 
+----
+type=CRED_REFR msg=audit(2024年04月05日 21:10:49.771:1519) : pid=4273 uid=root auid=unset ses=unset msg='op=PAM:setcred acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=USER_START msg=audit(2024年04月05日 21:10:49.771:1520) : pid=4273 uid=root auid=unset ses=unset msg='op=PAM:session_open acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=USER_END msg=audit(2024年04月05日 21:10:49.791:1522) : pid=4273 uid=root auid=unset ses=unset msg='op=PAM:session_close acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=CRED_DISP msg=audit(2024年04月05日 21:10:49.791:1523) : pid=4273 uid=root auid=unset ses=unset msg='op=PAM:setcred acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=PROCTITLE msg=audit(2024年04月05日 21:10:49.771:1521) : proctitle=ausearch -i 
+type=PATH msg=audit(2024年04月05日 21:10:49.771:1521) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 21:10:49.771:1521) : item=0 name=/sbin/ausearch inode=138882 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 21:10:49.771:1521) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 21:10:49.771:1521) : argc=2 a0=ausearch a1=-i 
+type=SYSCALL msg=audit(2024年04月05日 21:10:49.771:1521) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55b25fae3b98 a1=0x55b25fae9d98 a2=0x55b25fae9e60 a3=0x55b25fafa000 items=2 ppid=4273 pid=4274 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=unset comm=ausearch exe=/sbin/ausearch key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 21:10:49.767:1517) : proctitle=sudo ausearch -i 
+type=PATH msg=audit(2024年04月05日 21:10:49.767:1517) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 21:10:49.767:1517) : item=0 name=/usr/bin/sudo inode=264893 dev=08:01 mode=file,suid,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 21:10:49.767:1517) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 21:10:49.767:1517) : argc=3 a0=sudo a1=ausearch a2=-i 
+type=SYSCALL msg=audit(2024年04月05日 21:10:49.767:1517) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xc0ab08 a1=0xa8a248 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4273 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+----
+type=USER_CMD msg=audit(2024年04月05日 21:12:23.859:1526) : pid=4278 uid=a auid=unset ses=unset msg='cwd=/var/log/audit cmd=ausearch -i terminal=pts/2 res=success' 
+----
+type=CRED_REFR msg=audit(2024年04月05日 21:12:23.859:1527) : pid=4278 uid=root auid=unset ses=unset msg='op=PAM:setcred acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=USER_START msg=audit(2024年04月05日 21:12:23.859:1528) : pid=4278 uid=root auid=unset ses=unset msg='op=PAM:session_open acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=USER_END msg=audit(2024年04月05日 21:12:23.867:1530) : pid=4278 uid=root auid=unset ses=unset msg='op=PAM:session_close acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=CRED_DISP msg=audit(2024年04月05日 21:12:23.867:1531) : pid=4278 uid=root auid=unset ses=unset msg='op=PAM:setcred acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=PROCTITLE msg=audit(2024年04月05日 21:12:23.855:1525) : proctitle=sudo ausearch -i 
+type=PATH msg=audit(2024年04月05日 21:12:23.855:1525) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 21:12:23.855:1525) : item=0 name=/usr/bin/sudo inode=264893 dev=08:01 mode=file,suid,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 21:12:23.855:1525) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 21:12:23.855:1525) : argc=3 a0=sudo a1=ausearch a2=-i 
+type=SYSCALL msg=audit(2024年04月05日 21:12:23.855:1525) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xc16468 a1=0xc0e6c8 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4278 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 21:12:23.855:1524) : proctitle=grep --color=auto --color=auto USER_CMD 
+type=PATH msg=audit(2024年04月05日 21:12:23.855:1524) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 21:12:23.855:1524) : item=0 name=/bin/grep inode=130109 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 21:12:23.855:1524) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 21:12:23.855:1524) : argc=4 a0=grep a1=--color=auto a2=--color=auto a3=USER_CMD 
+type=SYSCALL msg=audit(2024年04月05日 21:12:23.855:1524) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xc16468 a1=0xa9de88 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4279 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=grep exe=/bin/grep key=USER 
+----
+type=PROCTITLE msg=audit(2024年04月05日 21:12:23.859:1529) : proctitle=ausearch -i 
+type=PATH msg=audit(2024年04月05日 21:12:23.859:1529) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 21:12:23.859:1529) : item=0 name=/sbin/ausearch inode=138882 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 21:12:23.859:1529) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 21:12:23.859:1529) : argc=2 a0=ausearch a1=-i 
+type=SYSCALL msg=audit(2024年04月05日 21:12:23.859:1529) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x5600ffdf1b98 a1=0x5600ffdf7d98 a2=0x5600ffdf7e60 a3=0x5600ffe08000 items=2 ppid=4278 pid=4280 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=unset comm=ausearch exe=/sbin/ausearch key=USER 
+----
+type=USER_CMD msg=audit(2024年04月05日 21:13:22.343:1533) : pid=4283 uid=a auid=unset ses=unset msg='cwd=/var/log/audit cmd=ausearch -i terminal=pts/2 res=success' 
+----
+type=CRED_REFR msg=audit(2024年04月05日 21:13:22.343:1534) : pid=4283 uid=root auid=unset ses=unset msg='op=PAM:setcred acct=root exe=/usr/bin/sudo hostname=? addr=? terminal=/dev/pts/2 res=success' 
+----
+type=PROCTITLE msg=audit(2024年04月05日 21:13:22.339:1532) : proctitle=sudo ausearch -i 
+type=PATH msg=audit(2024年04月05日 21:13:22.339:1532) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=140244 dev=08:01 mode=file,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=PATH msg=audit(2024年04月05日 21:13:22.339:1532) : item=0 name=/usr/bin/sudo inode=264893 dev=08:01 mode=file,suid,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 
+type=CWD msg=audit(2024年04月05日 21:13:22.339:1532) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 21:13:22.339:1532) : argc=3 a0=sudo a1=ausearch a2=-i 
+type=SYSCALL msg=audit(2024年04月05日 21:13:22.339:1532) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xbdbe68 a1=0xa88c48 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4283 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+type=USER_CMD msg=audit(2024年04月05日 20:41:40.327:1443) : pid=4158 uid=a auid=unset ses=unset msg='cwd=/etc/audit cmd=gedit audit.rules terminal=pts/6 res=success' 
+type=PROCTITLE msg=audit(2024年04月05日 20:41:40.327:1446) : proctitle=gedit audit.rules 
+type=CWD msg=audit(2024年04月05日 20:41:40.327:1446) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:41:40.327:1446) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x558f7ec67b98 a1=0x558f7ec6dd98 a2=0x558f7ec6de60 a3=0x558f7ec7e000 items=2 ppid=4158 pid=4159 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts6 ses=unset comm=gedit exe=/usr/bin/gedit key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:41:40.359:1447) : proctitle=gedit audit.rules 
+type=CWD msg=audit(2024年04月05日 20:41:40.359:1447) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:41:40.359:1447) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x1f080b7 a1=0x1f09b30 a2=0x7ffea3a2e4a0 a3=0x97 items=1 ppid=4159 pid=4162 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts6 ses=unset comm=gedit exe=/usr/bin/gedit key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:41:40.359:1448) : proctitle=gedit audit.rules 
+type=CWD msg=audit(2024年04月05日 20:41:40.359:1448) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:41:40.359:1448) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x1f080b8 a1=0x1f09b30 a2=0x7ffea3a2e4a0 a3=0x97 items=1 ppid=4159 pid=4162 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts6 ses=unset comm=gedit exe=/usr/bin/gedit key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:41:40.359:1449) : proctitle=gedit audit.rules 
+type=CWD msg=audit(2024年04月05日 20:41:40.359:1449) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:41:40.359:1449) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x1f080bd a1=0x1f09b30 a2=0x7ffea3a2e4a0 a3=0x97 items=1 ppid=4159 pid=4162 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts6 ses=unset comm=gedit exe=/usr/bin/gedit key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:41:40.359:1450) : proctitle=gedit audit.rules 
+type=CWD msg=audit(2024年04月05日 20:41:40.359:1450) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:41:40.359:1450) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x1f080be a1=0x1f09b30 a2=0x7ffea3a2e4a0 a3=0x97 items=2 ppid=4159 pid=4162 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts6 ses=unset comm=dbus-launch exe=/usr/bin/dbus-launch key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:41:40.315:1442) : proctitle=sudo gedit audit.rules 
+type=CWD msg=audit(2024年04月05日 20:41:40.315:1442) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:41:40.315:1442) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x1686a28 a1=0x1686c48 a2=0x1743008 a3=0x598 items=2 ppid=2441 pid=4158 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+type=USER_CMD msg=audit(2024年04月05日 20:42:35.443:1454) : pid=4167 uid=a auid=unset ses=unset msg='cwd=/var/log/audit cmd=ausearch -i terminal=pts/2 res=success' 
+type=PROCTITLE msg=audit(2024年04月05日 20:42:35.443:1457) : proctitle=ausearch -i 
+type=CWD msg=audit(2024年04月05日 20:42:35.443:1457) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:42:35.443:1457) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x563d36c97b98 a1=0x563d36c9dd98 a2=0x563d36c9de60 a3=0x563d36cae000 items=2 ppid=4167 pid=4168 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=unset comm=ausearch exe=/sbin/ausearch key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:42:35.439:1453) : proctitle=sudo ausearch -i 
+type=CWD msg=audit(2024年04月05日 20:42:35.439:1453) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:42:35.439:1453) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xa9e568 a1=0xa8b9c8 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4167 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+type=USER_CMD msg=audit(2024年04月05日 20:47:06.087:1462) : pid=4180 uid=a auid=unset ses=unset msg='cwd=/var/log/audit cmd=ausearch -i terminal=pts/2 res=success' 
+type=PROCTITLE msg=audit(2024年04月05日 20:47:06.075:1461) : proctitle=grep --color=auto USER_CMD 
+type=CWD msg=audit(2024年04月05日 20:47:06.075:1461) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:47:06.075:1461) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xbddc68 a1=0xc08348 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4181 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=grep exe=/bin/grep key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:47:06.075:1460) : proctitle=sudo ausearch -i 
+type=CWD msg=audit(2024年04月05日 20:47:06.075:1460) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:47:06.075:1460) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xc13408 a1=0xa9de88 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4180 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:47:06.087:1465) : proctitle=ausearch -i 
+type=CWD msg=audit(2024年04月05日 20:47:06.087:1465) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:47:06.087:1465) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55e65c773b98 a1=0x55e65c779d98 a2=0x55e65c779e60 a3=0x55e65c78a000 items=2 ppid=4180 pid=4182 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=unset comm=ausearch exe=/sbin/ausearch key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:47:43.843:1468) : proctitle=ls --color=auto 
+type=CWD msg=audit(2024年04月05日 20:47:43.843:1468) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:47:43.843:1468) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x1679ce8 a1=0x1686ac8 a2=0x1743008 a3=0x598 items=2 ppid=2441 pid=4185 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=ls exe=/bin/ls key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:47:59.879:1469) : proctitle=gcc b.c 
+type=CWD msg=audit(2024年04月05日 20:47:59.879:1469) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:47:59.879:1469) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x1686a28 a1=0x1686c08 a2=0x1743008 a3=0x598 items=2 ppid=2441 pid=4186 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=gcc exe=/usr/bin/gcc-5 key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:47:59.891:1470) : proctitle=gcc b.c 
+type=CWD msg=audit(2024年04月05日 20:47:59.891:1470) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:47:59.891:1470) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x7ffc17c892a4 a1=0xb34768 a2=0xb33d80 a3=0x7ff32a3f9270 items=1 ppid=4186 pid=4188 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=gcc exe=/usr/bin/gcc-5 key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:47:59.891:1471) : proctitle=gcc b.c 
+type=CWD msg=audit(2024年04月05日 20:47:59.891:1471) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:47:59.891:1471) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x7ffc17c8929d a1=0xb34768 a2=0xb33d80 a3=0x7ff32a3f9270 items=1 ppid=4186 pid=4188 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=gcc exe=/usr/bin/gcc-5 key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:47:59.891:1472) : proctitle=gcc b.c 
+type=CWD msg=audit(2024年04月05日 20:47:59.891:1472) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:47:59.891:1472) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x7ffc17c892a0 a1=0xb34768 a2=0xb33d80 a3=0x7ff32a3f9270 items=1 ppid=4186 pid=4188 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=gcc exe=/usr/bin/gcc-5 key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:47:59.891:1473) : proctitle=gcc b.c 
+type=CWD msg=audit(2024年04月05日 20:47:59.891:1473) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:47:59.891:1473) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x7ffc17c892a1 a1=0xb34768 a2=0xb33d80 a3=0x7ff32a3f9270 items=1 ppid=4186 pid=4188 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=gcc exe=/usr/bin/gcc-5 key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:47:59.891:1474) : proctitle=gcc b.c 
+type=CWD msg=audit(2024年04月05日 20:47:59.891:1474) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:47:59.891:1474) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x7ffc17c892a6 a1=0xb34768 a2=0xb33d80 a3=0x7ff32a3f9270 items=1 ppid=4186 pid=4188 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=gcc exe=/usr/bin/gcc-5 key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:47:59.891:1475) : proctitle=gcc b.c 
+type=CWD msg=audit(2024年04月05日 20:47:59.891:1475) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:47:59.891:1475) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x7ffc17c892a7 a1=0xb34768 a2=0xb33d80 a3=0x7ff32a3f9270 items=2 ppid=4186 pid=4188 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=as exe=/usr/bin/x86_64-linux-gnu-as key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:47:59.899:1476) : proctitle=/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -pl 
+type=CWD msg=audit(2024年04月05日 20:47:59.899:1476) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:47:59.899:1476) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xdf06d0 a1=0xdefff0 a2=0x7ffff1f89d20 a3=0x5b3 items=2 ppid=4189 pid=4190 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=ld exe=/usr/bin/x86_64-linux-gnu-ld.bfd key=USER 
+type=USER_CMD msg=audit(2024年04月05日 20:48:06.519:1478) : pid=4191 uid=a auid=unset ses=unset msg='cwd=/etc/audit cmd=gedit a.c terminal=pts/6 res=success' 
+type=PROCTITLE msg=audit(2024年04月05日 20:48:06.519:1481) : proctitle=gedit a.c 
+type=CWD msg=audit(2024年04月05日 20:48:06.519:1481) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:48:06.519:1481) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55f2e370bb98 a1=0x55f2e3711d98 a2=0x55f2e3711e60 a3=0x55f2e3722000 items=2 ppid=4191 pid=4192 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts6 ses=unset comm=gedit exe=/usr/bin/gedit key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:48:06.551:1482) : proctitle=gedit a.c 
+type=CWD msg=audit(2024年04月05日 20:48:06.551:1482) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:48:06.551:1482) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x114a787 a1=0x113a8f0 a2=0x7ffc2b33e810 a3=0x97 items=1 ppid=4192 pid=4195 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts6 ses=unset comm=gedit exe=/usr/bin/gedit key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:48:06.551:1483) : proctitle=gedit a.c 
+type=CWD msg=audit(2024年04月05日 20:48:06.551:1483) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:48:06.551:1483) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x114a788 a1=0x113a8f0 a2=0x7ffc2b33e810 a3=0x97 items=1 ppid=4192 pid=4195 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts6 ses=unset comm=gedit exe=/usr/bin/gedit key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:48:06.551:1484) : proctitle=gedit a.c 
+type=CWD msg=audit(2024年04月05日 20:48:06.551:1484) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:48:06.551:1484) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x114a78d a1=0x113a8f0 a2=0x7ffc2b33e810 a3=0x97 items=1 ppid=4192 pid=4195 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts6 ses=unset comm=gedit exe=/usr/bin/gedit key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:48:06.551:1485) : proctitle=gedit a.c 
+type=CWD msg=audit(2024年04月05日 20:48:06.551:1485) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:48:06.551:1485) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x114a78e a1=0x113a8f0 a2=0x7ffc2b33e810 a3=0x97 items=2 ppid=4192 pid=4195 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts6 ses=unset comm=dbus-launch exe=/usr/bin/dbus-launch key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:48:06.507:1477) : proctitle=sudo gedit a.c 
+type=CWD msg=audit(2024年04月05日 20:48:06.507:1477) : cwd=/etc/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:48:06.507:1477) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x1686b68 a1=0x16868c8 a2=0x1743008 a3=0x598 items=2 ppid=2441 pid=4191 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts6 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+type=USER_CMD msg=audit(2024年04月05日 20:48:13.175:1490) : pid=4201 uid=a auid=unset ses=unset msg='cwd=/var/log/audit cmd=ausearch -i terminal=pts/2 res=success' 
+type=PROCTITLE msg=audit(2024年04月05日 20:48:13.171:1489) : proctitle=grep --color=auto USER_CMD 
+type=CWD msg=audit(2024年04月05日 20:48:13.171:1489) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:48:13.171:1489) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xa9e568 a1=0xa9dd48 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4202 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=grep exe=/bin/grep key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:48:13.175:1493) : proctitle=ausearch -i 
+type=CWD msg=audit(2024年04月05日 20:48:13.175:1493) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:48:13.175:1493) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55b8fc293b98 a1=0x55b8fc299d98 a2=0x55b8fc299e60 a3=0x55b8fc2aa000 items=2 ppid=4201 pid=4203 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=unset comm=ausearch exe=/sbin/ausearch key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:48:13.171:1488) : proctitle=sudo ausearch -i 
+type=CWD msg=audit(2024年04月05日 20:48:13.171:1488) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 20:48:13.171:1488) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xc14828 a1=0xc08348 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4201 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:57:08.843:1497) : proctitle=grep -q compiz /usr/share/gnome-session/sessions/ubuntu.session 
+type=CWD msg=audit(2024年04月05日 20:57:08.843:1497) : cwd=/home/a 
+type=SYSCALL msg=audit(2024年04月05日 20:57:08.843:1497) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x1135fa8 a1=0x11355c8 a2=0x1134008 a3=0x598 items=2 ppid=4227 pid=4228 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=(none) ses=unset comm=grep exe=/bin/grep key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:57:08.847:1498) : proctitle=systemctl --user is-active unity7 
+type=CWD msg=audit(2024年04月05日 20:57:08.847:1498) : cwd=/home/a 
+type=SYSCALL msg=audit(2024年04月05日 20:57:08.847:1498) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x1137848 a1=0x1137308 a2=0x1134008 a3=0x598 items=2 ppid=4227 pid=4229 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=(none) ses=unset comm=systemctl exe=/bin/systemctl key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:57:08.839:1496) : proctitle=/bin/bash /usr/lib/x86_64-linux-gnu/unity/upstart-prestart-check 
+type=CWD msg=audit(2024年04月05日 20:57:08.839:1496) : cwd=/home/a 
+type=SYSCALL msg=audit(2024年04月05日 20:57:08.839:1496) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55c50c4374a0 a1=0x55c50c437450 a2=0x55c50c45cb30 a3=0x8 items=3 ppid=1273 pid=4227 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=(none) ses=unset comm=upstart-prestar exe=/bin/bash key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 20:57:08.855:1499) : proctitle=/usr/lib/x86_64-linux-gnu/unity/unity-panel-service --lockscreen-mode 
+type=CWD msg=audit(2024年04月05日 20:57:08.855:1499) : cwd=/home/a 
+type=SYSCALL msg=audit(2024年04月05日 20:57:08.855:1499) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55c50c417360 a1=0x55c50c48f080 a2=0x55c50c45cb30 a3=0x8 items=2 ppid=1273 pid=4230 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=(none) ses=unset comm=unity-panel-ser exe=/usr/lib/x86_64-linux-gnu/unity/unity-panel-service key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:01:12.627:1501) : proctitle=/sbin/unix_chkpwd a chkexpiry 
+type=CWD msg=audit(2024年04月05日 21:01:12.627:1501) : cwd=/home/a 
+type=SYSCALL msg=audit(2024年04月05日 21:01:12.627:1501) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x7f6ca01e3ead a1=0x7f6c85c40a90 a2=0x7f6ca03e7388 a3=0x7f6cb517c270 items=2 ppid=1769 pid=4244 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=shadow sgid=shadow fsgid=shadow tty=(none) ses=unset comm=unix_chkpwd exe=/sbin/unix_chkpwd key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:01:12.411:1500) : proctitle=/sbin/unix_chkpwd a nonull 
+type=CWD msg=audit(2024年04月05日 21:01:12.411:1500) : cwd=/home/a 
+type=SYSCALL msg=audit(2024年04月05日 21:01:12.411:1500) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x7f6ca01e3ead a1=0x7f6c85c40b30 a2=0x7f6ca03eb3c0 a3=0x7f6cb517c270 items=2 ppid=1769 pid=4243 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=shadow sgid=shadow fsgid=shadow tty=(none) ses=unset comm=unix_chkpwd exe=/sbin/unix_chkpwd key=USER 
+type=USER_CMD msg=audit(2024年04月05日 21:03:02.067:1503) : pid=4250 uid=a auid=unset ses=unset msg='cwd=/var/log/audit cmd=ausearch -i terminal=pts/2 res=success' 
+type=PROCTITLE msg=audit(2024年04月05日 21:03:02.067:1506) : proctitle=ausearch -i 
+type=CWD msg=audit(2024年04月05日 21:03:02.067:1506) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 21:03:02.067:1506) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x556414a44b98 a1=0x556414a4ad98 a2=0x556414a4ae60 a3=0x556414a5b000 items=2 ppid=4250 pid=4251 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=unset comm=ausearch exe=/sbin/ausearch key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:03:02.063:1502) : proctitle=sudo ausearch -i 
+type=CWD msg=audit(2024年04月05日 21:03:02.063:1502) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 21:03:02.063:1502) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xc0e0e8 a1=0xa9dec8 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4250 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+type=USER_CMD msg=audit(2024年04月05日 21:10:45.955:1511) : pid=4270 uid=a auid=unset ses=unset msg='cwd=/var/log/audit cmd=ausearch -i terminal=pts/2 res=success' 
+type=PROCTITLE msg=audit(2024年04月05日 21:10:45.951:1510) : proctitle=sudo ausearch -i 
+type=CWD msg=audit(2024年04月05日 21:10:45.951:1510) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 21:10:45.951:1510) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xa89d68 a1=0xa9de88 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4270 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:10:45.959:1514) : proctitle=ausearch -i 
+type=CWD msg=audit(2024年04月05日 21:10:45.959:1514) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 21:10:45.959:1514) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55abf5b60b98 a1=0x55abf5b66d98 a2=0x55abf5b66e60 a3=0x55abf5b77000 items=2 ppid=4270 pid=4272 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=unset comm=ausearch exe=/sbin/ausearch key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:10:45.951:1509) : proctitle=grep --color=auto USER_CMD 
+type=CWD msg=audit(2024年04月05日 21:10:45.951:1509) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 21:10:45.951:1509) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xaa4448 a1=0xc08348 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4271 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=grep exe=/bin/grep key=USER 
+type=USER_CMD msg=audit(2024年04月05日 21:10:49.771:1518) : pid=4273 uid=a auid=unset ses=unset msg='cwd=/var/log/audit cmd=ausearch -i terminal=pts/2 res=success' 
+type=PROCTITLE msg=audit(2024年04月05日 21:10:49.771:1521) : proctitle=ausearch -i 
+type=CWD msg=audit(2024年04月05日 21:10:49.771:1521) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 21:10:49.771:1521) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55b25fae3b98 a1=0x55b25fae9d98 a2=0x55b25fae9e60 a3=0x55b25fafa000 items=2 ppid=4273 pid=4274 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=unset comm=ausearch exe=/sbin/ausearch key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:10:49.767:1517) : proctitle=sudo ausearch -i 
+type=CWD msg=audit(2024年04月05日 21:10:49.767:1517) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 21:10:49.767:1517) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xc0ab08 a1=0xa8a248 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4273 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+type=USER_CMD msg=audit(2024年04月05日 21:12:23.859:1526) : pid=4278 uid=a auid=unset ses=unset msg='cwd=/var/log/audit cmd=ausearch -i terminal=pts/2 res=success' 
+type=PROCTITLE msg=audit(2024年04月05日 21:12:23.855:1525) : proctitle=sudo ausearch -i 
+type=CWD msg=audit(2024年04月05日 21:12:23.855:1525) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 21:12:23.855:1525) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xc16468 a1=0xc0e6c8 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4278 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:12:23.855:1524) : proctitle=grep --color=auto --color=auto USER_CMD 
+type=CWD msg=audit(2024年04月05日 21:12:23.855:1524) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 21:12:23.855:1524) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xc16468 a1=0xa9de88 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4279 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=grep exe=/bin/grep key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:12:23.859:1529) : proctitle=ausearch -i 
+type=CWD msg=audit(2024年04月05日 21:12:23.859:1529) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 21:12:23.859:1529) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x5600ffdf1b98 a1=0x5600ffdf7d98 a2=0x5600ffdf7e60 a3=0x5600ffe08000 items=2 ppid=4278 pid=4280 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=unset comm=ausearch exe=/sbin/ausearch key=USER 
+type=USER_CMD msg=audit(2024年04月05日 21:13:22.343:1533) : pid=4283 uid=a auid=unset ses=unset msg='cwd=/var/log/audit cmd=ausearch -i terminal=pts/2 res=success' 
+type=PROCTITLE msg=audit(2024年04月05日 21:13:22.343:1536) : proctitle=ausearch -i 
+type=CWD msg=audit(2024年04月05日 21:13:22.343:1536) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 21:13:22.343:1536) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55e143b54b98 a1=0x55e143b5ad98 a2=0x55e143b5ae60 a3=0x55e143b6b000 items=2 ppid=4283 pid=4284 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=unset comm=ausearch exe=/sbin/ausearch key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:13:22.339:1532) : proctitle=sudo ausearch -i 
+type=CWD msg=audit(2024年04月05日 21:13:22.339:1532) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 21:13:22.339:1532) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xbdbe68 a1=0xa88c48 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4283 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:13:28.643:1540) : proctitle=/usr/lib/gvfs/gvfsd-metadata 
+type=CWD msg=audit(2024年04月05日 21:13:28.643:1540) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 21:13:28.643:1540) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55dbe021bb70 a1=0x55dbe01700f0 a2=0x55dbe021f530 a3=0x8 items=2 ppid=4291 pid=4292 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=(none) ses=unset comm=gvfsd-metadata exe=/usr/lib/gvfs/gvfsd-metadata key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:13:28.339:1539) : proctitle=gedit a.txt 
+type=CWD msg=audit(2024年04月05日 21:13:28.339:1539) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 21:13:28.339:1539) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xa90a68 a1=0xa8b9c8 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4286 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=gedit exe=/usr/bin/gedit key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:17:01.047:1545) : proctitle=/bin/sh -c    cd / && run-parts --report /etc/cron.hourly 
+type=CWD msg=audit(2024年04月05日 21:17:01.047:1545) : cwd=/root 
+type=SYSCALL msg=audit(2024年04月05日 21:17:01.047:1545) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x22ece16 a1=0x7fff68850df0 a2=0x22ece80 a3=0x2c8 items=2 ppid=4307 pid=4308 auid=root uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=3 comm=sh exe=/bin/dash key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:17:01.047:1546) : proctitle=run-parts --report /etc/cron.hourly 
+type=CWD msg=audit(2024年04月05日 21:17:01.047:1546) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 21:17:01.047:1546) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x558ad0ce0410 a1=0x558acf3c0c58 a2=0x558ad0ce03c8 a3=0x1 items=2 ppid=4308 pid=4309 auid=root uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=3 comm=run-parts exe=/bin/run-parts key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:19:29.207:1550) : proctitle=grep -q compiz /usr/share/gnome-session/sessions/ubuntu.session 
+type=CWD msg=audit(2024年04月05日 21:19:29.207:1550) : cwd=/home/a 
+type=SYSCALL msg=audit(2024年04月05日 21:19:29.207:1550) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x926fa8 a1=0x9265c8 a2=0x925008 a3=0x598 items=2 ppid=4316 pid=4317 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=(none) ses=unset comm=grep exe=/bin/grep key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:19:29.215:1551) : proctitle=systemctl --user is-active unity7 
+type=CWD msg=audit(2024年04月05日 21:19:29.215:1551) : cwd=/home/a 
+type=SYSCALL msg=audit(2024年04月05日 21:19:29.215:1551) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x928848 a1=0x928308 a2=0x925008 a3=0x598 items=2 ppid=4316 pid=4318 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=(none) ses=unset comm=systemctl exe=/bin/systemctl key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:19:29.203:1549) : proctitle=/bin/bash /usr/lib/x86_64-linux-gnu/unity/upstart-prestart-check 
+type=CWD msg=audit(2024年04月05日 21:19:29.203:1549) : cwd=/home/a 
+type=SYSCALL msg=audit(2024年04月05日 21:19:29.203:1549) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55c50c447690 a1=0x55c50c447640 a2=0x55c50c45cb30 a3=0x8 items=3 ppid=1273 pid=4316 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=(none) ses=unset comm=upstart-prestar exe=/bin/bash key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:19:29.219:1552) : proctitle=/usr/lib/x86_64-linux-gnu/unity/unity-panel-service --lockscreen-mode 
+type=CWD msg=audit(2024年04月05日 21:19:29.219:1552) : cwd=/home/a 
+type=SYSCALL msg=audit(2024年04月05日 21:19:29.219:1552) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55c50c485940 a1=0x55c50c490610 a2=0x55c50c45cb30 a3=0x8 items=2 ppid=1273 pid=4319 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=(none) ses=unset comm=unity-panel-ser exe=/usr/lib/x86_64-linux-gnu/unity/unity-panel-service key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:40:59.735:1554) : proctitle=/sbin/unix_chkpwd a chkexpiry 
+type=CWD msg=audit(2024年04月05日 21:40:59.735:1554) : cwd=/home/a 
+type=SYSCALL msg=audit(2024年04月05日 21:40:59.735:1554) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x7f6ca01e3ead a1=0x7f6c84dcaa90 a2=0x7f6ca03e7388 a3=0x7f6cb517c270 items=2 ppid=1769 pid=4373 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=shadow sgid=shadow fsgid=shadow tty=(none) ses=unset comm=unix_chkpwd exe=/sbin/unix_chkpwd key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:40:59.547:1553) : proctitle=/sbin/unix_chkpwd a nonull 
+type=CWD msg=audit(2024年04月05日 21:40:59.547:1553) : cwd=/home/a 
+type=SYSCALL msg=audit(2024年04月05日 21:40:59.547:1553) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x7f6ca01e3ead a1=0x7f6c84dcab30 a2=0x7f6ca03eb3c0 a3=0x7f6cb517c270 items=2 ppid=1769 pid=4372 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=shadow sgid=shadow fsgid=shadow tty=(none) ses=unset comm=unix_chkpwd exe=/sbin/unix_chkpwd key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:46:49.851:1556) : proctitle=grep -q compiz /usr/share/gnome-session/sessions/ubuntu.session 
+type=CWD msg=audit(2024年04月05日 21:46:49.851:1556) : cwd=/home/a 
+type=SYSCALL msg=audit(2024年04月05日 21:46:49.851:1556) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x129afa8 a1=0x129a5c8 a2=0x1299008 a3=0x598 items=2 ppid=4392 pid=4393 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=(none) ses=unset comm=grep exe=/bin/grep key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:46:49.847:1555) : proctitle=/bin/bash /usr/lib/x86_64-linux-gnu/unity/upstart-prestart-check 
+type=CWD msg=audit(2024年04月05日 21:46:49.847:1555) : cwd=/home/a 
+type=SYSCALL msg=audit(2024年04月05日 21:46:49.847:1555) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55c50c4680b0 a1=0x55c50c468060 a2=0x55c50c45cb30 a3=0x8 items=3 ppid=1273 pid=4392 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=(none) ses=unset comm=upstart-prestar exe=/bin/bash key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:46:49.851:1557) : proctitle=systemctl --user is-active unity7 
+type=CWD msg=audit(2024年04月05日 21:46:49.851:1557) : cwd=/home/a 
+type=SYSCALL msg=audit(2024年04月05日 21:46:49.851:1557) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x129c848 a1=0x129c308 a2=0x1299008 a3=0x598 items=2 ppid=4392 pid=4394 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=(none) ses=unset comm=systemctl exe=/bin/systemctl key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:46:49.859:1558) : proctitle=/usr/lib/x86_64-linux-gnu/unity/unity-panel-service --lockscreen-mode 
+type=CWD msg=audit(2024年04月05日 21:46:49.859:1558) : cwd=/home/a 
+type=SYSCALL msg=audit(2024年04月05日 21:46:49.859:1558) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55c50c431930 a1=0x55c50c47d150 a2=0x55c50c45cb30 a3=0x8 items=2 ppid=1273 pid=4395 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=(none) ses=unset comm=unity-panel-ser exe=/usr/lib/x86_64-linux-gnu/unity/unity-panel-service key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:56:01.279:1563) : proctitle=/bin/sh -c    test -x /etc/cron.daily/popularity-contest && /etc/cron.daily/popularity-contest --crond 
+type=CWD msg=audit(2024年04月05日 21:56:01.279:1563) : cwd=/root 
+type=SYSCALL msg=audit(2024年04月05日 21:56:01.279:1563) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x22ecea6 a1=0x7fff68850df0 a2=0x22f3c50 a3=0x2c8 items=2 ppid=4420 pid=4421 auid=root uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=4 comm=sh exe=/bin/dash key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 21:56:01.279:1564) : proctitle=/bin/sh /etc/cron.daily/popularity-contest --crond 
+type=CWD msg=audit(2024年04月05日 21:56:01.279:1564) : cwd=/root 
+type=SYSCALL msg=audit(2024年04月05日 21:56:01.279:1564) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55c26e71bc08 a1=0x55c26e71bc60 a2=0x55c2702d6328 a3=0x55c2702d6520 items=3 ppid=4421 pid=4422 auid=root uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=4 comm=popularity-cont exe=/bin/dash key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:17:01.399:1571) : proctitle=/bin/sh -c    cd / && run-parts --report /etc/cron.hourly 
+type=CWD msg=audit(2024年04月05日 22:17:01.399:1571) : cwd=/root 
+type=SYSCALL msg=audit(2024年04月05日 22:17:01.399:1571) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x22ece16 a1=0x7fff68850df0 a2=0x22ece80 a3=0x2c8 items=2 ppid=4468 pid=4469 auid=root uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=5 comm=sh exe=/bin/dash key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:17:01.399:1572) : proctitle=run-parts --report /etc/cron.hourly 
+type=CWD msg=audit(2024年04月05日 22:17:01.399:1572) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 22:17:01.399:1572) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55bc81b10410 a1=0x55bc80888c58 a2=0x55bc81b103c8 a3=0x1 items=2 ppid=4469 pid=4470 auid=root uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=5 comm=run-parts exe=/bin/run-parts key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:38:48.443:1576) : proctitle=mktemp 
+type=CWD msg=audit(2024年04月05日 22:38:48.443:1576) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 22:38:48.443:1576) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55df6986ac40 a1=0x55df6986ac08 a2=0x55df6986ac18 a3=0x1 items=2 ppid=4516 pid=4517 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=mktemp exe=/bin/mktemp key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:38:48.443:1577) : proctitle=mktemp 
+type=CWD msg=audit(2024年04月05日 22:38:48.443:1577) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 22:38:48.443:1577) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55df6986ac40 a1=0x55df6986ac08 a2=0x55df6986ac18 a3=0x1 items=2 ppid=4516 pid=4518 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=mktemp exe=/bin/mktemp key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:38:48.439:1575) : proctitle=/bin/sh /etc/update-motd.d/50-motd-news --force 
+type=CWD msg=audit(2024年04月05日 22:38:48.439:1575) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 22:38:48.439:1575) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x561b386315d0 a1=0x561b3869a670 a2=0x561b38669dd0 a3=0x561b385f57c0 items=3 ppid=1 pid=4516 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=50-motd-news exe=/bin/dash key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:38:48.447:1578) : proctitle=mktemp 
+type=CWD msg=audit(2024年04月05日 22:38:48.447:1578) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 22:38:48.447:1578) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55df6986ac40 a1=0x55df6986ac08 a2=0x55df6986ac18 a3=0x1 items=2 ppid=4516 pid=4519 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=mktemp exe=/bin/mktemp key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:38:48.451:1579) : proctitle=dpkg -l curl 
+type=CWD msg=audit(2024年04月05日 22:38:48.451:1579) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 22:38:48.451:1579) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55df6a700d60 a1=0x55df6a700d18 a2=0x55df6a700d38 a3=0x1 items=2 ppid=4520 pid=4521 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=dpkg exe=/usr/bin/dpkg key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:38:48.451:1580) : proctitle=awk $1 == "ii" { print($3); exit(0); } 
+type=CWD msg=audit(2024年04月05日 22:38:48.451:1580) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 22:38:48.451:1580) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55df6a700d68 a1=0x55df6a700d28 a2=0x55df6a700d40 a3=0x1 items=2 ppid=4520 pid=4522 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=awk exe=/usr/bin/mawk key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:38:48.455:1581) : proctitle=dpkg -l curl 
+type=CWD msg=audit(2024年04月05日 22:38:48.455:1581) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 22:38:48.455:1581) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x7fff9da4c557 a1=0x9f3170 a2=0x9f30a0 a3=0x7f6b2ba7ef70 items=1 ppid=4520 pid=4521 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=dpkg exe=/usr/bin/dpkg key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:38:48.455:1582) : proctitle=dpkg -l curl 
+type=CWD msg=audit(2024年04月05日 22:38:48.455:1582) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 22:38:48.455:1582) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x7fff9da4c558 a1=0x9f3170 a2=0x9f30a0 a3=0x7f6b2ba7ef70 items=1 ppid=4520 pid=4521 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=dpkg exe=/usr/bin/dpkg key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:38:48.455:1583) : proctitle=dpkg -l curl 
+type=CWD msg=audit(2024年04月05日 22:38:48.455:1583) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 22:38:48.455:1583) : arch=x86_64 syscall=execve success=no exit=-2(沒有此一檔案或目錄) a0=0x7fff9da4c55d a1=0x9f3170 a2=0x9f30a0 a3=0x7f6b2ba7ef70 items=1 ppid=4520 pid=4521 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=dpkg exe=/usr/bin/dpkg key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:38:48.455:1584) : proctitle=dpkg -l curl 
+type=CWD msg=audit(2024年04月05日 22:38:48.455:1584) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 22:38:48.455:1584) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x7fff9da4c55e a1=0x9f3170 a2=0x9f30a0 a3=0x7f6b2ba7ef70 items=2 ppid=4520 pid=4521 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=dpkg-query exe=/usr/bin/dpkg-query key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:38:48.515:1585) : proctitle=sed -e s/ /\//g 
+type=CWD msg=audit(2024年04月05日 22:38:48.515:1585) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 22:38:48.515:1585) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55df6a700db8 a1=0x55df6a700d70 a2=0x55df6a700d90 a3=0x1 items=2 ppid=4523 pid=4525 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=sed exe=/bin/sed key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:38:48.519:1586) : proctitle=uname -o 
+type=CWD msg=audit(2024年04月05日 22:38:48.519:1586) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 22:38:48.519:1586) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55df6a700e00 a1=0x55df6a700dc0 a2=0x55df6a700dd8 a3=0x1 items=2 ppid=4516 pid=4526 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=uname exe=/bin/uname key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:38:48.523:1587) : proctitle=uname -r 
+type=CWD msg=audit(2024年04月05日 22:38:48.523:1587) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 22:38:48.523:1587) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55df6a700df8 a1=0x55df6a700db8 a2=0x55df6a700dd0 a3=0x1 items=2 ppid=4516 pid=4527 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=uname exe=/bin/uname key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:38:48.523:1588) : proctitle=uname -m 
+type=CWD msg=audit(2024年04月05日 22:38:48.523:1588) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 22:38:48.523:1588) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55df6a700e08 a1=0x55df6a700dc8 a2=0x55df6a700de0 a3=0x1 items=2 ppid=4516 pid=4528 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=uname exe=/bin/uname key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:38:48.527:1589) : proctitle=uname -m 
+type=CWD msg=audit(2024年04月05日 22:38:48.527:1589) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 22:38:48.527:1589) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55df6986ac08 a1=0x55df6986abc8 a2=0x55df6986abe0 a3=0x1 items=2 ppid=4516 pid=4529 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=uname exe=/bin/uname key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:38:48.527:1590) : proctitle=grep -m1 ^model name /proc/cpuinfo 
+type=CWD msg=audit(2024年04月05日 22:38:48.527:1590) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 22:38:48.527:1590) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55df6a701130 a1=0x55df6a7010e0 a2=0x55df6a701108 a3=0x1 items=2 ppid=4530 pid=4531 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=grep exe=/bin/grep key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:38:48.527:1591) : proctitle=sed -e s/.*: // -e s:\s\+:/:g 
+type=CWD msg=audit(2024年04月05日 22:38:48.527:1591) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 22:38:48.527:1591) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55df6a701178 a1=0x55df6a701120 a2=0x55df6a701150 a3=0x1 items=2 ppid=4530 pid=4532 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=sed exe=/bin/sed key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:38:48.535:1592) : proctitle=curl --connect-timeout 60 --max-time 60 -A curl/7.47.0-1ubuntu2.19 Ubuntu/16.04.7/LTS GNU/Linux/4.15.0-142-generic/x86_64 AMD/Ry 
+type=CWD msg=audit(2024年04月05日 22:38:48.535:1592) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 22:38:48.535:1592) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55df6a701f18 a1=0x55df6a701e50 a2=0x55df6a701ef0 a3=0x1 items=2 ppid=4516 pid=4533 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=curl exe=/usr/bin/curl key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:39:48.555:1593) : proctitle=rm -f /tmp/tmp.9H5ltebrCA /tmp/tmp.pcCK5agHKt /tmp/tmp.1VWvcuRCps 
+type=CWD msg=audit(2024年04月05日 22:39:48.555:1593) : cwd=/ 
+type=SYSCALL msg=audit(2024年04月05日 22:39:48.555:1593) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55df6a701290 a1=0x55df6986ac58 a2=0x55df6a701268 a3=0x1 items=2 ppid=4516 pid=4537 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=rm exe=/bin/rm key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:59:01.587:1596) : proctitle=/sbin/unix_chkpwd a nonull 
+type=CWD msg=audit(2024年04月05日 22:59:01.587:1596) : cwd=/home/a 
+type=SYSCALL msg=audit(2024年04月05日 22:59:01.587:1596) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x7f6ca01e3ead a1=0x7f6c86441b30 a2=0x7f6ca03eb3c0 a3=0x7f6cb517c270 items=2 ppid=1769 pid=4585 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=shadow sgid=shadow fsgid=shadow tty=(none) ses=unset comm=unix_chkpwd exe=/sbin/unix_chkpwd key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 22:59:01.791:1597) : proctitle=/sbin/unix_chkpwd a chkexpiry 
+type=CWD msg=audit(2024年04月05日 22:59:01.791:1597) : cwd=/home/a 
+type=SYSCALL msg=audit(2024年04月05日 22:59:01.791:1597) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x7f6ca01e3ead a1=0x7f6c86441a90 a2=0x7f6ca03e7388 a3=0x7f6cb517c270 items=2 ppid=1769 pid=4586 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=shadow sgid=shadow fsgid=shadow tty=(none) ses=unset comm=unix_chkpwd exe=/sbin/unix_chkpwd key=USER 
+type=USER_CMD msg=audit(2024年04月05日 23:00:48.743:1602) : pid=4590 uid=a auid=unset ses=unset msg='cwd=/var/log/audit cmd=ausearch -i terminal=pts/2 res=success' 
+type=PROCTITLE msg=audit(2024年04月05日 23:00:46.311:1599) : proctitle=sudo ausearch -i 
+type=CWD msg=audit(2024年04月05日 23:00:46.311:1599) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 23:00:46.311:1599) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xa89d88 a1=0xa9de88 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4590 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 23:00:48.743:1605) : proctitle=ausearch -i 
+type=CWD msg=audit(2024年04月05日 23:00:48.743:1605) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 23:00:48.743:1605) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x56080f074b98 a1=0x56080f07ad98 a2=0x56080f082010 a3=0x7f6033353b78 items=2 ppid=4590 pid=4592 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=unset comm=ausearch exe=/sbin/ausearch key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 23:00:46.311:1598) : proctitle=grep --color=auto type=USER_CMD\|type=PROCTITLE\|type=CWD\|type=SYSCALL 
+type=CWD msg=audit(2024年04月05日 23:00:46.311:1598) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 23:00:46.311:1598) : argc=3 a0=grep a1=--color=auto a2=type=USER_CMD\|type=PROCTITLE\|type=CWD\|type=SYSCALL 
+type=SYSCALL msg=audit(2024年04月05日 23:00:46.311:1598) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xc12e28 a1=0xa8c008 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4591 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=grep exe=/bin/grep key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 23:01:00.883:1608) : proctitle=clear 
+type=CWD msg=audit(2024年04月05日 23:01:00.883:1608) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 23:01:00.883:1608) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xa91068 a1=0xa90968 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4595 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=clear exe=/usr/bin/clear key=USER 
+type=USER_CMD msg=audit(2024年04月05日 23:01:03.179:1611) : pid=4596 uid=a auid=unset ses=unset msg='cwd=/var/log/audit cmd=ausearch -i terminal=pts/2 res=success' 
+type=PROCTITLE msg=audit(2024年04月05日 23:01:03.175:1609) : proctitle=grep --color=auto type=USER_CMD\|type=PROCTITLE\|type=CWD\|type=SYSCALL 
+type=CWD msg=audit(2024年04月05日 23:01:03.175:1609) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 23:01:03.175:1609) : argc=3 a0=grep a1=--color=auto a2=type=USER_CMD\|type=PROCTITLE\|type=CWD\|type=SYSCALL 
+type=SYSCALL msg=audit(2024年04月05日 23:01:03.175:1609) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xa90a68 a1=0xa89248 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4597 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=grep exe=/bin/grep key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 23:01:03.175:1610) : proctitle=sudo ausearch -i 
+type=CWD msg=audit(2024年04月05日 23:01:03.175:1610) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 23:01:03.175:1610) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xc09dc8 a1=0xa9de88 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4596 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 23:01:03.179:1614) : proctitle=ausearch -i 
+type=CWD msg=audit(2024年04月05日 23:01:03.179:1614) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 23:01:03.179:1614) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x55bb63cb2b98 a1=0x55bb63cb8d98 a2=0x55bb63cb8e60 a3=0x55bb63cc9000 items=2 ppid=4596 pid=4598 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=unset comm=ausearch exe=/sbin/ausearch key=USER 
+type=USER_CMD msg=audit(2024年04月05日 23:01:17.015:1619) : pid=4599 uid=a auid=unset ses=unset msg='cwd=/var/log/audit cmd=ausearch -i terminal=pts/2 res=success' 
+type=PROCTITLE msg=audit(2024年04月05日 23:01:17.011:1618) : proctitle=grep --color=auto type=USER_CMD\|type=PROCTITLE\|type=CWD\|type=SYSCALL 
+type=CWD msg=audit(2024年04月05日 23:01:17.011:1618) : cwd=/var/log/audit 
+type=EXECVE msg=audit(2024年04月05日 23:01:17.011:1618) : argc=3 a0=grep a1=--color=auto a2=type=USER_CMD\|type=PROCTITLE\|type=CWD\|type=SYSCALL 
+type=SYSCALL msg=audit(2024年04月05日 23:01:17.011:1618) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xc09dc8 a1=0xa90cc8 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4600 auid=unset uid=a gid=a euid=a suid=a fsuid=a egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=grep exe=/bin/grep key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 23:01:17.015:1622) : proctitle=ausearch -i 
+type=CWD msg=audit(2024年04月05日 23:01:17.015:1622) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 23:01:17.015:1622) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x557334d4fb98 a1=0x557334d55d98 a2=0x557334d55e60 a3=0x557334d66000 items=2 ppid=4599 pid=4601 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=unset comm=ausearch exe=/sbin/ausearch key=USER 
+type=PROCTITLE msg=audit(2024年04月05日 23:01:17.011:1617) : proctitle=sudo ausearch -i 
+type=CWD msg=audit(2024年04月05日 23:01:17.011:1617) : cwd=/var/log/audit 
+type=SYSCALL msg=audit(2024年04月05日 23:01:17.011:1617) : arch=x86_64 syscall=execve success=yes exit=0 a0=0xc138a8 a1=0xa9dd48 a2=0xb5b008 a3=0x598 items=2 ppid=3166 pid=4599 auid=unset uid=a gid=a euid=root suid=root fsuid=root egid=a sgid=a fsgid=a tty=pts2 ses=unset comm=sudo exe=/usr/bin/sudo key=USER 
